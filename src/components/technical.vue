@@ -1,62 +1,87 @@
 <script setup>
-// import { onMounted } from 'vue';
-
 defineProps({
     theexpert: String,
-    logoimg:String,
-    theotherlogo:String
-})
-
-
-
-
+    logoimg: String,
+    theotherlogo: String
+});
 </script>
 
-
 <template>
-    <div class="theexper">
-<h5>{{ theexpert }}</h5>
-
-<div class="logosconn">
-   
-   <img :src="logoimg" >
-   <img v-if="theotherlogo" :src="theotherlogo" >
-    <!-- <h2>{{ logo }}</h2> -->
-   
-</div>
+  <div class="skill-item">
+    <div class="skill-info">
+      <h4 class="skill-title">{{ theexpert }}</h4>
     </div>
-
-
+    <div class="skill-logos">
+      <div class="logo-wrapper">
+        <img :src="logoimg" :alt="theexpert" />
+      </div>
+      <div v-if="theotherlogo" class="logo-wrapper">
+        <img :src="theotherlogo" alt="Secondary skill" />
+      </div>
+    </div>
+  </div>
 </template>
 
-<style>
-
-.theexper{
- border-bottom: 2px solid rgba(0, 0, 0, 0.5);
-    padding: 8px 10px;
-    display: flex;
-    height: 20%;
-    justify-content: space-between;
-align-items: center;
+<style scoped>
+.skill-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border-color);
+  transition: all 0.3s var(--ease-out-expo);
 }
-.theexper h5{
-    font-size: 1rem;
+
+.skill-item:hover {
+  padding-left: 1rem;
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 12px;
+}
+
+.skill-item:last-child {
+  border-bottom: none;
+}
+
+.skill-info {
+  flex: 1;
+}
+
+.skill-title {
   font-family: var(--writingfont);
-  
-
-}
-.logosconn{
-/* border: 2px solid blue; */
-width: 30%;
-height: 98%;
-display: flex;
-justify-content: space-between;
-align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
 }
 
-.logosconn img
-{
-    width: 80%;
-    height: 80%;
+.skill-logos {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-wrapper {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-secondary);
+  border-radius: 10px;
+  padding: 8px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s var(--ease-out-expo);
+}
+
+.logo-wrapper:hover {
+  transform: scale(1.1);
+  background: #ffffff;
+  border-color: var(--bg-dark);
+}
+
+.logo-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 </style>
