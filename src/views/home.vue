@@ -168,7 +168,7 @@ onMounted(() => {
           </div>
         </div>
         
-        <a href="/resume.pdf" target="_blank" class="resume-btn animate-on-scroll">
+        <a href="./Sharyar_Naveed.pdf" target="_blank" class="resume-btn animate-on-scroll">
           <span class="btn-text">Get Resume</span>
           <span class="btn-icon">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
