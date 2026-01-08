@@ -230,11 +230,11 @@ onMounted(() => {
       <div class="techdiv">
         <technical
           theexpert="Next.js"
-          logoimg="src/components/icons/nextjs.svg"
+          logoimg="/icons/nextjs.svg"
         />
         <technical
           theexpert="Nuxt.js"
-          logoimg="src/components/icons/nuxt.svg"
+          logoimg="/icons/nuxt.svg"
         />
       </div>
     </div>
@@ -245,15 +245,15 @@ onMounted(() => {
       <div class="techdiv">
         <technical
           theexpert="Vue.js"
-          logoimg="src/components/icons/vue.svg"
+          logoimg="/icons/vue.svg"
         />
         <technical
           theexpert="React"
-          logoimg="src/components/icons/react.svg"
+          logoimg="/icons/react.svg"
         />
         <technical
           theexpert="Tailwind CSS"
-          logoimg="src/components/icons/tailwind.svg"
+          logoimg="/icons/tailwind.svg"
         />
       </div>
     </div>
@@ -264,7 +264,7 @@ onMounted(() => {
       <div class="techdiv">
         <technical
           theexpert="React Native"
-          logoimg="src/components/icons/reactnative.svg"
+          logoimg="/icons/reactnative.svg"
         />
       </div>
     </div>
@@ -275,11 +275,11 @@ onMounted(() => {
       <div class="techdiv">
         <technical
           theexpert="PHP"
-          logoimg="src/components/icons/php.svg"
+          logoimg="/icons/php.svg"
         />
         <technical
           theexpert="Express.js"
-          logoimg="src/components/icons/express.svg"
+          logoimg="/icons/express.svg"
         />
       </div>
     </div>
@@ -290,15 +290,15 @@ onMounted(() => {
       <div class="techdiv">
         <technical
           theexpert="MySQL"
-          logoimg="src/components/icons/mysql.svg"
+          logoimg="/icons/mysql.svg"
         />
         <technical
           theexpert="Supabase"
-          logoimg="src/components/icons/supabase.svg"
+          logoimg="/icons/supabase.svg"
         />
         <technical
           theexpert="Appwrite"
-          logoimg="src/components/icons/appwrite.svg"
+          logoimg="/icons/appwrite.svg"
         />
       </div>
     </div>
@@ -309,11 +309,11 @@ onMounted(() => {
       <div class="techdiv">
         <technical
           theexpert="Git"
-          logoimg="src/components/icons/git.svg"
+          logoimg="/icons/git.svg"
         />
         <technical
           theexpert="GitHub Actions"
-          logoimg="src/components/icons/github.svg"
+          logoimg="/icons/github.svg"
         />
       </div>
     </div>
