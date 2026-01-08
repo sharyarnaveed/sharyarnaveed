@@ -97,6 +97,66 @@ onMounted(() => {
             <polyline points="14 2 14 8 20 8" />
           </svg>
         </div>
+        <div class="floating-element paper" style="top: 35%; left: 10%">
+          <svg
+            width="26"
+            height="26"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <path
+              d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"
+            />
+            <polyline points="14 2 14 8 20 8" />
+          </svg>
+        </div>
+        <div class="floating-element paper" style="top: 45%; left: 80%">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <path
+              d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"
+            />
+            <polyline points="14 2 14 8 20 8" />
+          </svg>
+        </div>
+        <div class="floating-element paper" style="top: 80%; right: 15%">
+          <svg
+            width="25"
+            height="25"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <path
+              d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"
+            />
+            <polyline points="14 2 14 8 20 8" />
+          </svg>
+        </div>
+        <div class="floating-element paper" style="top: 10%; left: 15%">
+          <svg
+            width="21"
+            height="21"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <path
+              d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"
+            />
+            <polyline points="14 2 14 8 20 8" />
+          </svg>
+        </div>
       </div>
 
       <div class="hero-center">
@@ -350,6 +410,22 @@ onMounted(() => {
 .floating-element:nth-child(4) {
   --rotation: 30deg;
   animation-delay: 1.5s;
+}
+.floating-element:nth-child(5) {
+  --rotation: -15deg;
+  animation-delay: 0.5s;
+}
+.floating-element:nth-child(6) {
+  --rotation: 20deg;
+  animation-delay: 2.5s;
+}
+.floating-element:nth-child(7) {
+  --rotation: -25deg;
+  animation-delay: 1.8s;
+}
+.floating-element:nth-child(8) {
+  --rotation: 12deg;
+  animation-delay: 0.8s;
 }
 
 @keyframes floatAround {
@@ -987,10 +1063,6 @@ onMounted(() => {
     left: auto;
     text-align: center;
     margin-top: 2rem;
-  }
-
-  .floating-elements {
-    display: none;
   }
 
   .section-header {
