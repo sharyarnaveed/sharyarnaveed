@@ -9,15 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@types/three": "^0.167.1",
     "scroll-out": "^2.2.12",
     "splitting": "^1.1.0",
-    "three": "^0.167.1",
-    "vue": "^3.4.29",
+    "vue": "^3.5.13",
     "vue-router": "^4.3.3"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.5",
-    "vite": "^5.3.1"
+    "@vitejs/plugin-vue": "^6.0.1",
+    "vite": "^6.0.1"
   }
 }
