@@ -4,48 +4,50 @@ import { ref, onMounted } from 'vue';
 const projects = ref([
   {
     id: 1,
-    title: 'Food Website',
-    description: 'A visually appealing and responsive food website showcasing culinary delights with modern design.',
-    link: 'https://github.com/sharyarnaveed/Food-Website',
-    image: 'https://images.unsplash.com/photo-1722891067479-5fd39edbfc3d?q=80&w=1582&auto=format&fit=crop',
-    tags: ['Vue.js', 'CSS', 'Responsive'],
-    year: '2024'
+    title: 'TimeTablr',
+    description: `Developed a student timetable mobile application, published on the Google Play Store. The application provides real-time access to class schedules and sends push notifications to students 10 minutes before each class. Currently used by over 750 university students.`,
+    github: 'https://github.com/sharyarnaveed/timetablrmobile.git',
+    live: 'https://play.google.com/store/apps/details?id=com.sharyar_naveed.timetablr',
+    image: 'image.png',
+    tags: ['React Native', 'Expo', 'Push Notifications', 'Express.js'],
+    year: '2025'
   },
   {
     id: 2,
-    title: 'Car Vista',
-    description: 'A sleek and modern car showroom website featuring an elegant display of the latest vehicles.',
-    link: 'https://github.com/sharyarnaveed/Car-Vista',
-    image: 'https://images.unsplash.com/photo-1676136449197-babffb1125f0?q=80&w=1527&auto=format&fit=crop',
-    tags: ['JavaScript', 'UI/UX', 'Animation'],
-    year: '2024'
+    title: 'Spelling Bee',
+    description: 'Built a real-time Spelling Bee multiplayer application using Appwrite as the database and Nuxt.js as the FullStack Framework.',
+    github: 'https://github.com/sharyarnaveed/spelling-bee.git',
+    live: 'https://spelling-bee.appwrite.network/',
+    image: 'spellinhome.png',
+    tags: ['Nuxt.js', 'Appwrite', 'Vue.js', 'Socket.io'],
+    year: '2025'
   },
   {
     id: 3,
-    title: 'Clinic Management',
-    description: 'A robust clinic management system streamlining patient records and administrative tasks.',
-    link: 'https://github.com/sharyarnaveed/clinic',
-    image: 'https://images.unsplash.com/photo-1701014159251-f86a81a6fe13?q=80&w=1563&auto=format&fit=crop',
-    tags: ['PHP', 'MySQL', 'Dashboard'],
-    year: '2024'
+    title: 'Bonny',
+    description: `Developed and maintained the backend system for a location-based restaurant discount platform, including interactive map integration and Stripe payment processing for coupon purchases.`,
+    live: 'https://www.bonny.at/',
+    image: '/bonny.png',
+    tags: ['Next.js', 'Supabase', 'Stripe', 'Maps API'],
+    year: '2025'
   },
   {
     id: 4,
-    title: 'ProSensia',
-    description: 'A startup focused on predictive maintenance for air conditioning systems using IoT.',
-    link: 'https://prosensia.pk/',
-    image: 'https://images.unsplash.com/photo-1721041011353-298585b7c8f6?q=80&w=1527&auto=format&fit=crop',
-    tags: ['Vue.js', 'IoT', 'Analytics'],
+    title: 'Plyzrx',
+    description: `Developed the backend for Plyzrx, a UNO tournament gaming platform with APIs for admin-managed tournaments, user participation, match creation, and reward distribution.`,
+    live: 'https://www.plyzrx.com/',
+    image: '/plyzx.png',
+    tags: ['Next.js', 'ShadCN', 'Appwrite', 'Gaming'],
     year: '2025'
   },
   {
     id: 5,
-    title: 'Quiz Master',
-    description: 'A dynamic quiz website offering interactive and engaging quizzes with score tracking.',
-    link: 'https://github.com/sharyarnaveed/Quiz-Master',
-    image: 'https://images.unsplash.com/photo-1722269160081-5bce2d5fdde2?q=80&w=1632&auto=format&fit=crop',
-    tags: ['JavaScript', 'Interactive', 'Game'],
-    year: '2024'
+    title: 'Prepzy',
+    description: 'Smart plans, personalized study, and expert tools designed to help you achieve top results.',
+    live: 'https://prepzy.tech/',
+    image: '/fyp.png',
+    tags: ['Next.js', 'ShadCN', 'Supabase', 'AI/ML', 'Python'],
+    year: 'Currently Working'
   }
 ]);
 
@@ -93,12 +95,24 @@ onMounted(() => {
             </div>
             <h3 class="card-title">{{ projects[0].title }}</h3>
             <p class="card-description">{{ projects[0].description }}</p>
-            <a :href="projects[0].link" target="_blank" class="card-link">
-              <span>View Project</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M7 17L17 7M17 7H7M17 7V17"/>
-              </svg>
-            </a>
+            <div class="card-links">
+              <a v-if="projects[0].live" :href="projects[0].live" target="_blank" class="card-link primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+                <span>Live Demo</span>
+                <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                </svg>
+              </a>
+              <a v-if="projects[0].github" :href="projects[0].github" target="_blank" class="card-link secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                <span>Source Code</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -114,34 +128,40 @@ onMounted(() => {
           @mouseenter="hoveredProject = index + 1"
           @mouseleave="hoveredProject = null"
         >
-          <a :href="project.link" target="_blank" class="card-link-wrapper">
-            <div class="card-inner">
-              <div class="card-visual">
-                <div class="image-wrapper">
-                  <img :src="project.image" :alt="project.title" />
-                  <div class="image-overlay"></div>
-                </div>
-                <div class="card-number">0{{ index + 2 }}</div>
-                <div class="hover-arrow">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M7 17L17 7M17 7H7M17 7V17"/>
-                  </svg>
-                </div>
+          <div class="card-inner">
+            <div class="card-visual">
+              <div class="image-wrapper">
+                <img :src="project.image" :alt="project.title" />
+                <div class="image-overlay"></div>
               </div>
-              <div class="card-info">
-                <div class="card-meta">
-                  <span class="card-year">{{ project.year }}</span>
-                  <div class="card-tags-mini">
-                    <span v-for="(tag, tagIndex) in project.tags.slice(0, 2)" :key="tag" class="tag-mini">
-                      {{ tag }}{{ tagIndex < Math.min(project.tags.length, 2) - 1 ? ' · ' : '' }}
-                    </span>
-                  </div>
-                </div>
-                <h3 class="card-title">{{ project.title }}</h3>
-                <p class="card-description">{{ project.description }}</p>
+              <div class="card-number">0{{ index + 2 }}</div>
+            </div>
+            <div class="card-info">
+              <div class="card-meta">
+                <span class="card-year">{{ project.year }}</span>
+              </div>
+              <h3 class="card-title">{{ project.title }}</h3>
+              <p class="card-description">{{ project.description }}</p>
+              <div class="card-tags-grid">
+                <span v-for="tag in project.tags" :key="tag" class="tag-pill">{{ tag }}</span>
+              </div>
+              <div class="card-actions">
+                <a v-if="project.live" :href="project.live" target="_blank" class="action-btn primary">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                  </svg>
+                  <span>Live</span>
+                </a>
+                <a v-if="project.github" :href="project.github" target="_blank" class="action-btn secondary">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  <span>Code</span>
+                </a>
               </div>
             </div>
-          </a>
+          </div>
         </div>
       </div>
     </div>
@@ -209,23 +229,27 @@ onMounted(() => {
 
 .project-card.featured .card-inner {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  min-height: 480px;
+  grid-template-columns: 1fr 1.2fr;
+  min-height: 360px;
+  max-height: 400px;
 }
 
 .project-card.featured .card-visual {
   position: relative;
   overflow: hidden;
+  max-height: 400px;
 }
 
 .project-card.featured .image-wrapper {
   height: 100%;
+  max-height: 400px;
 }
 
 .project-card.featured .image-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
   transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease;
   filter: saturate(0.9);
 }
@@ -258,7 +282,7 @@ onMounted(() => {
 }
 
 .project-card.featured .card-info {
-  padding: 3rem;
+  padding: 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -305,51 +329,72 @@ onMounted(() => {
 
 .project-card.featured .card-title {
   font-family: var(--headingfont);
-  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
   font-weight: 700;
   letter-spacing: -0.02em;
   color: #0a0a0a;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   line-height: 1.1;
 }
 
 .project-card.featured .card-description {
   font-family: var(--writingfont);
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #666;
   line-height: 1.7;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Card Links Container */
+.card-links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }
 
 .card-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.5rem;
   font-family: var(--writingfont);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 600;
-  color: #0a0a0a;
   text-decoration: none;
-  padding: 1rem 1.5rem;
-  background: #0a0a0a;
-  color: white;
+  padding: 0.875rem 1.25rem;
   border-radius: 100px;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   width: fit-content;
 }
 
-.card-link:hover {
+.card-link.primary {
+  background: #0a0a0a;
+  color: white;
+}
+
+.card-link.primary:hover {
   background: #1a1a1a;
-  transform: translateX(5px);
-  gap: 1rem;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
-.card-link svg {
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+.card-link.secondary {
+  background: transparent;
+  color: #0a0a0a;
+  border: 1.5px solid rgba(0, 0, 0, 0.15);
 }
 
-.card-link:hover svg {
-  transform: translate(3px, -3px);
+.card-link.secondary:hover {
+  border-color: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.03);
+  transform: translateY(-2px);
+}
+
+.card-link .arrow {
+  transition: transform 0.3s ease;
+}
+
+.card-link:hover .arrow {
+  transform: translate(2px, -2px);
 }
 
 /* Grid Cards */
@@ -421,23 +466,18 @@ onMounted(() => {
   box-shadow: 
     0 20px 60px rgba(0, 0, 0, 0.08),
     0 8px 24px rgba(0, 0, 0, 0.04);
-  transform: translateY(-10px) scale(1.01);
-}
-
-.card-link-wrapper {
-  text-decoration: none;
-  color: inherit;
-  display: block;
+  transform: translateY(-8px) scale(1.01);
 }
 
 .projects-grid .card-inner {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .projects-grid .card-visual {
   position: relative;
-  height: 220px;
+  height: 180px;
   overflow: hidden;
 }
 
@@ -449,6 +489,7 @@ onMounted(() => {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
   transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease;
   filter: saturate(0.85) brightness(0.98);
 }
@@ -481,70 +522,48 @@ onMounted(() => {
   left: 150%;
 }
 
-.hover-arrow {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  width: 48px;
-  height: 48px;
-  background: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transform: translateY(10px) rotate(-45deg) scale(0.8);
-  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.hover-arrow svg {
-  color: #0a0a0a;
-  transition: transform 0.3s ease;
-}
-
-.projects-grid .project-card:hover .hover-arrow {
-  opacity: 1;
-  transform: translateY(0) rotate(0deg) scale(1);
-}
-
-.projects-grid .project-card:hover .hover-arrow svg {
-  animation: arrowBounce 0.6s ease 0.2s;
-}
-
-@keyframes arrowBounce {
-  0%, 100% { transform: translate(0, 0); }
-  50% { transform: translate(3px, -3px); }
-}
-
 .projects-grid .card-info {
-  padding: 1.75rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.5rem;
+  flex: 1;
 }
 
-.card-tags-mini {
+/* Tags Grid for Grid Cards */
+.card-tags-grid {
   display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.5rem 0;
 }
 
-.tag-mini {
+.tag-pill {
   font-family: var(--writingfont);
-  font-size: 0.7rem;
-  color: #888;
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: #555;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.3rem 0.6rem;
+  border-radius: 100px;
   letter-spacing: 0.02em;
+  transition: all 0.3s ease;
+}
+
+.projects-grid .project-card:hover .tag-pill {
+  background: rgba(0, 0, 0, 0.08);
 }
 
 .projects-grid .card-title {
   font-family: var(--headingfont);
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: -0.01em;
   color: #0a0a0a;
   transition: color 0.3s ease;
   position: relative;
   display: inline-block;
+  width: fit-content;
 }
 
 .projects-grid .card-title::after {
@@ -568,13 +587,57 @@ onMounted(() => {
 
 .projects-grid .card-description {
   font-family: var(--writingfont);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #777;
   line-height: 1.6;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* Action Buttons for Grid Cards */
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.75rem;
+}
+
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--writingfont);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.55rem 0.9rem;
+  border-radius: 100px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.action-btn.primary {
+  background: #0a0a0a;
+  color: white;
+}
+
+.action-btn.primary:hover {
+  background: #1a1a1a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.action-btn.secondary {
+  background: transparent;
+  color: #0a0a0a;
+  border: 1.5px solid rgba(0, 0, 0, 0.12);
+}
+
+.action-btn.secondary:hover {
+  border-color: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.03);
+  transform: translateY(-2px);
 }
 
 /* Responsive */
@@ -585,10 +648,12 @@ onMounted(() => {
 
   .project-card.featured .card-inner {
     grid-template-columns: 1fr;
+    max-height: none;
   }
 
   .project-card.featured .card-visual {
-    height: 220px;
+    height: 200px;
+    max-height: 200px;
   }
 
   .project-card.featured .card-info {
@@ -601,12 +666,18 @@ onMounted(() => {
 
   .project-card.featured .card-description {
     font-size: 0.9rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .card-links {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   .card-link {
-    padding: 0.875rem 1.25rem;
-    font-size: 0.8rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.75rem;
+    justify-content: center;
   }
 
   .projects-grid {
@@ -615,20 +686,20 @@ onMounted(() => {
   }
 
   .projects-grid .card-visual {
-    height: 180px;
+    height: 160px;
   }
 
   .projects-grid .card-info {
-    padding: 1rem;
-    gap: 0.5rem;
+    padding: 1.25rem;
+    gap: 0.4rem;
   }
 
   .projects-grid .card-title {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
   }
 
   .projects-grid .card-description {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 
   .card-number {
@@ -636,11 +707,18 @@ onMounted(() => {
     padding: 0.4rem 0.75rem;
   }
 
-  .hover-arrow {
-    width: 40px;
-    height: 40px;
-    top: 1rem;
-    right: 1rem;
+  .card-actions {
+    flex-wrap: wrap;
+  }
+
+  .action-btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.65rem;
+  }
+
+  .tag-pill {
+    font-size: 0.6rem;
+    padding: 0.25rem 0.5rem;
   }
 }
 
@@ -651,10 +729,12 @@ onMounted(() => {
 
   .project-card.featured .card-inner {
     grid-template-columns: 1fr;
+    max-height: none;
   }
 
   .project-card.featured .card-visual {
-    height: 280px;
+    height: 220px;
+    max-height: 220px;
   }
 
   .project-card.featured .card-info {
@@ -667,7 +747,7 @@ onMounted(() => {
   }
 
   .projects-grid .card-visual {
-    height: 200px;
+    height: 170px;
   }
 }
 
@@ -677,8 +757,9 @@ onMounted(() => {
   }
 
   .project-card.featured .card-inner {
-    grid-template-columns: 1fr 1fr;
-    min-height: 400px;
+    grid-template-columns: 1fr 1.2fr;
+    min-height: 320px;
+    max-height: 360px;
   }
 
   .project-card.featured .card-info {
@@ -686,7 +767,7 @@ onMounted(() => {
   }
 
   .project-card.featured .card-title {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
   }
 
   .projects-grid {
@@ -695,11 +776,11 @@ onMounted(() => {
   }
 
   .projects-grid .card-visual {
-    height: 180px;
+    height: 160px;
   }
 
   .projects-grid .card-title {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -709,7 +790,8 @@ onMounted(() => {
   }
 
   .project-card.featured .card-inner {
-    min-height: 440px;
+    min-height: 340px;
+    max-height: 380px;
   }
 }
 </style>

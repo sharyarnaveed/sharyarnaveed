@@ -167,14 +167,25 @@ onMounted(() => {
             <span class="name-superscript">(26)</span>
           </div>
         </div>
-        
-        <a href="./Sharyar_Naveed.pdf" target="_blank" class="resume-btn animate-on-scroll">
+
+        <a
+          href="./Sharyar_Naveed.pdf"
+          target="_blank"
+          class="resume-btn animate-on-scroll"
+        >
           <span class="btn-text">Get Resume</span>
           <span class="btn-icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-              <polyline points="7 10 12 15 17 10"/>
-              <line x1="12" y1="15" x2="12" y2="3"/>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
             </svg>
           </span>
         </a>
@@ -201,9 +212,13 @@ onMounted(() => {
       </div>
       <h2 class="work-title">
         <span class="work-title-line">Selected</span>
-        <span class="work-title-line accent">Work<span class="title-dot"></span></span>
+        <span class="work-title-line accent"
+          >Work<span class="title-dot"></span
+        ></span>
       </h2>
-      <p class="work-description">Crafting digital experiences through thoughtful design and clean code</p>
+      <p class="work-description">
+        Crafting digital experiences through thoughtful design and clean code
+      </p>
     </div>
     <projects />
   </main>
@@ -223,19 +238,13 @@ onMounted(() => {
       <span class="section-number">03</span>
       <h2 class="section-title">Skills & Expertise</h2>
     </div>
-    
+
     <!-- Full Stack Frameworks -->
     <div class="skill-category animate-on-scroll">
       <span class="category-label">Full Stack Frameworks</span>
       <div class="techdiv">
-        <technical
-          theexpert="Next.js"
-          logoimg="/icons/nextjs.svg"
-        />
-        <technical
-          theexpert="Nuxt.js"
-          logoimg="/icons/nuxt.svg"
-        />
+        <technical theexpert="Next.js" logoimg="/icons/nextjs.svg" />
+        <technical theexpert="Nuxt.js" logoimg="/icons/nuxt.svg" />
       </div>
     </div>
 
@@ -243,18 +252,9 @@ onMounted(() => {
     <div class="skill-category animate-on-scroll">
       <span class="category-label">Frontend</span>
       <div class="techdiv">
-        <technical
-          theexpert="Vue.js"
-          logoimg="/icons/vue.svg"
-        />
-        <technical
-          theexpert="React"
-          logoimg="/icons/react.svg"
-        />
-        <technical
-          theexpert="Tailwind CSS"
-          logoimg="/icons/tailwind.svg"
-        />
+        <technical theexpert="Vue.js" logoimg="/icons/vue.svg" />
+        <technical theexpert="React" logoimg="/icons/react.svg" />
+        <technical theexpert="Tailwind CSS" logoimg="/icons/tailwind.svg" />
       </div>
     </div>
 
@@ -262,10 +262,7 @@ onMounted(() => {
     <div class="skill-category animate-on-scroll">
       <span class="category-label">Mobile</span>
       <div class="techdiv">
-        <technical
-          theexpert="React Native"
-          logoimg="/icons/reactnative.svg"
-        />
+        <technical theexpert="React Native" logoimg="/icons/reactnative.svg" />
       </div>
     </div>
 
@@ -273,14 +270,8 @@ onMounted(() => {
     <div class="skill-category animate-on-scroll">
       <span class="category-label">Backend</span>
       <div class="techdiv">
-        <technical
-          theexpert="PHP"
-          logoimg="/icons/php.svg"
-        />
-        <technical
-          theexpert="Express.js"
-          logoimg="/icons/express.svg"
-        />
+        <technical theexpert="PHP" logoimg="/icons/php.svg" />
+        <technical theexpert="Express.js" logoimg="/icons/express.svg" />
       </div>
     </div>
 
@@ -288,18 +279,9 @@ onMounted(() => {
     <div class="skill-category animate-on-scroll">
       <span class="category-label">Database & BaaS</span>
       <div class="techdiv">
-        <technical
-          theexpert="MySQL"
-          logoimg="/icons/mysql.svg"
-        />
-        <technical
-          theexpert="Supabase"
-          logoimg="/icons/supabase.svg"
-        />
-        <technical
-          theexpert="Appwrite"
-          logoimg="/icons/appwrite.svg"
-        />
+        <technical theexpert="MySQL" logoimg="/icons/mysql.svg" />
+        <technical theexpert="Supabase" logoimg="/icons/supabase.svg" />
+        <technical theexpert="Appwrite" logoimg="/icons/appwrite.svg" />
       </div>
     </div>
 
@@ -307,14 +289,8 @@ onMounted(() => {
     <div class="skill-category animate-on-scroll">
       <span class="category-label">DevOps & Tools</span>
       <div class="techdiv">
-        <technical
-          theexpert="Git"
-          logoimg="/icons/git.svg"
-        />
-        <technical
-          theexpert="GitHub Actions"
-          logoimg="/icons/github.svg"
-        />
+        <technical theexpert="Git" logoimg="/icons/git.svg" />
+        <technical theexpert="GitHub Actions" logoimg="/icons/github.svg" />
       </div>
     </div>
   </main>
@@ -555,7 +531,7 @@ onMounted(() => {
 }
 
 .resume-btn::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -596,8 +572,13 @@ onMounted(() => {
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(4px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(4px);
+  }
 }
 
 /* Hero Tagline */
@@ -743,14 +724,20 @@ onMounted(() => {
 }
 
 .section-divider::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   width: 60%;
   max-width: 600px;
   height: 1px;
-  background: linear-gradient(90deg, transparent, #ddd 20%, #ddd 80%, transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #ddd 20%,
+    #ddd 80%,
+    transparent
+  );
 }
 
 .section-divider-icon {
@@ -775,7 +762,7 @@ onMounted(() => {
 }
 
 .projectconnn::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 50%;
@@ -858,8 +845,15 @@ onMounted(() => {
 }
 
 @keyframes pulse {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.2); opacity: 0.8; }
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
 }
 
 .work-description {
@@ -884,7 +878,7 @@ onMounted(() => {
 }
 
 .aboutconn::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 50%;
@@ -892,7 +886,13 @@ onMounted(() => {
   width: 80%;
   max-width: 800px;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(0,0,0,0.08) 30%, rgba(0,0,0,0.08) 70%, transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 0, 0, 0.08) 30%,
+    rgba(0, 0, 0, 0.08) 70%,
+    transparent
+  );
 }
 
 /* Technical Section */
@@ -908,7 +908,7 @@ onMounted(() => {
 }
 
 .technicalconn::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 50%;
@@ -916,7 +916,13 @@ onMounted(() => {
   width: 80%;
   max-width: 800px;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(0,0,0,0.06) 30%, rgba(0,0,0,0.06) 70%, transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 0, 0, 0.06) 30%,
+    rgba(0, 0, 0, 0.06) 70%,
+    transparent
+  );
 }
 
 .skill-category {
@@ -955,7 +961,13 @@ onMounted(() => {
 .footer-divider {
   width: 100%;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(0,0,0,0.1) 30%, rgba(0,0,0,0.1) 70%, transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 0, 0, 0.1) 30%,
+    rgba(0, 0, 0, 0.1) 70%,
+    transparent
+  );
   position: relative;
 }
 
