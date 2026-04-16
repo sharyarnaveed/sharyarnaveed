@@ -1,13 +1,11 @@
 <script setup>
-import { defineAsyncComponent, onMounted } from 'vue';
-
-const home = defineAsyncComponent(() => import('./views/home.vue'));
+import { RouterView } from 'vue-router';
 </script>
 
 <template>
   <div class="app-wrapper">
     <div class="cursor"></div>
-    <home />
+    <RouterView />
   </div>
 </template>
 

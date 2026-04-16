@@ -1,5 +1,6 @@
 <script setup>
 import { onMounted } from "vue";
+import { RouterLink } from "vue-router";
 import navbar from "../components/navbar.vue";
 import projects from "../components/projectdisplay.vue";
 import aboutme from "../components/aboutme.vue";
@@ -221,6 +222,15 @@ onMounted(() => {
       </p>
     </div>
     <projects />
+    <div class="work-more-wrap animate-on-scroll">
+      <RouterLink to="/projects" class="work-more-btn">
+        <span>Show More Projects</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14" />
+          <path d="M13 5l7 7-7 7" />
+        </svg>
+      </RouterLink>
+    </div>
   </main>
 
   <!-- About Section -->
@@ -863,6 +873,45 @@ onMounted(() => {
   max-width: 400px;
   margin: 0 auto;
   line-height: 1.7;
+}
+
+.work-more-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+  padding: 0 var(--section-padding, clamp(1rem, 5vw, 4rem));
+}
+
+.work-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  border: 1.5px solid #0a0a0a;
+  border-radius: 999px;
+  background: linear-gradient(120deg, #ffffff 0%, #f2f2f2 100%);
+  color: #0a0a0a;
+  padding: 0.9rem 1.45rem;
+  font-family: var(--writingfont);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.work-more-btn:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(120deg, #0a0a0a 0%, #1c1c1c 100%);
+  color: #ffffff;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.18);
+}
+
+.work-more-btn svg {
+  transition: transform 0.25s ease;
+}
+
+.work-more-btn:hover svg {
+  transform: translateX(3px);
 }
 
 /* About Section */

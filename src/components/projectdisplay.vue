@@ -35,9 +35,10 @@ const projects = ref([
     id: 4,
     title: 'Plyzrx',
     description: `Developed the backend for Plyzrx, a UNO tournament gaming platform with APIs for admin-managed tournaments, user participation, match creation, and reward distribution.`,
-    live: 'https://www.plyzrx.com/',
+    github: 'https://github.com/sharyarnaveed/plyzrx.git',
+
     image: '/plyzx.png',
-    tags: ['Next.js', 'ShadCN', 'Appwrite', 'Gaming'],
+    tags: ['Next.js', 'ShadCN', 'Appwrite', 'Gaming',"Stripe"],
     year: '2025'
   },
   {
@@ -48,6 +49,15 @@ const projects = ref([
     image: '/fyp.png',
     tags: ['Next.js', 'ShadCN', 'Supabase', 'AI/ML', 'Python'],
     year: 'Currently Working'
+  },
+  {
+    id: 6,
+    title: 'Medistry',
+    description: `Built and deployed a conversion-focused NMDCAT prep platform for medical aspirants, featuring PMDC-aligned program pages, mentor profiles, social proof, and high-intent CTA flows for demo, diagnostics, and enrollment.`,
+    live: 'https://www.medistry.pk/',
+    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1600&auto=format&fit=crop',
+    tags: ['Next.js', 'EdTech', 'Landing Page', 'NMDCAT', 'Conversion UI'],
+    year: '2026'
   }
 ]);
 
