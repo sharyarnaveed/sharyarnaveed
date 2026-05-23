@@ -209,7 +209,7 @@ onMounted(() => {
     <div class="work-header animate-on-scroll">
       <div class="work-header-top">
         <span class="work-label">Portfolio</span>
-        <span class="work-count">05 Projects</span>
+        <span class="work-count">07 Projects</span>
       </div>
       <h2 class="work-title">
         <span class="work-title-line">Selected</span>

@@ -58,6 +58,15 @@ const projects = ref([
     image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1600&auto=format&fit=crop',
     tags: ['Next.js', 'EdTech', 'Landing Page', 'NMDCAT', 'Conversion UI'],
     year: '2026'
+  },
+  {
+    id: 7,
+    title: 'Full Stack Developer — Advanced Wholesale Order Management System (OMS)',
+    description: `Built and maintained an advanced multi-portal Order Management System (OMS) for Peacock Wholesale, a global K-Beauty wholesale platform. Developed a scalable full-stack system using Next.js, React, TypeScript, and Supabase, featuring vendor management, order assignment workflows, payout and transaction management through Wise and Airwallex, CRM automation, logistics handling, and finance reconciliation. Integrated Intercom for real-time customer support and ticket synchronization. Implemented role-based access control, multi-tenant portals, automated payout routing, inventory workflows, document management, and analytics dashboards to streamline wholesale operations and partner coordination.`,
+    live: 'https://peacockwholesale.io/products',
+    image: '/peacock-wholesale.png',
+    tags: ['Next.js', 'React', 'TypeScript', 'Supabase', 'Intercom', 'Airwallex', 'Xero', 'Brevo'],
+    year: '2025'
   }
 ]);
 
