@@ -1,18 +1,18 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=soft&color=0:FFDBDA,50:D5C5C8,100:9DA3A4&height=200&section=header&text=Sharyar%20Naveed&fontSize=46&fontColor=604D53&animation=fadeIn&fontAlignY=40&desc=Web%20Developer%20%C2%B7%20Creative%20Developer&descAlignY=58&descSize=18&descColor=604D53" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&color=0:3A345B,50:71557A,100:D183A9&height=200&section=header&text=Sharyar%20Naveed&fontSize=46&fontColor=F3C8DD&animation=fadeIn&fontAlignY=40&desc=Web%20Developer%20%C2%B7%20Creative%20Developer&descAlignY=58&descSize=18&descColor=F3C8DD" width="100%"/>
 
 <a href="https://github.com/sharyarnaveed">
-  <img src="https://readme-typing-svg.demolab.com?font=Oxygen&size=20&pause=1400&color=DB7F8E&center=true&vCenter=true&width=720&height=32&lines=Building+full-stack+products+from+concept+to+deployment;Next.js+%C2%B7+Nuxt.js+%C2%B7+React+Native+%C2%B7+Supabase;750%2B+users+on+Timetablr+%E2%80%94+shipped+and+growing;Open+to+freelance%2C+collaborations+%26+startup-focused+work" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Doto&size=22&pause=1400&color=D183A9&center=true&vCenter=true&width=720&height=32&weight=700&lines=Building+full-stack+products+from+concept+to+deployment;Next.js+%C2%B7+Nuxt.js+%C2%B7+React+Native+%C2%B7+Supabase;750%2B+users+on+Timetablr+%E2%80%94+shipped+and+growing;Open+to+freelance%2C+collaborations+%26+startup-focused+work" alt="Typing SVG" />
 </a>
 
 <br/>
 
 <a href="mailto:sharyarmalik430@gmail.com">
-  <img src="https://img.shields.io/badge/Email-DB7F8E?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/Email-4B1535?style=for-the-badge&logoColor=white" />
 </a>
 <a href="https://github.com/sharyarnaveed">
-  <img src="https://img.shields.io/badge/GitHub-604D53?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-3A345B?style=for-the-badge&logoColor=white" />
 </a>
 
 </div>
@@ -21,7 +21,7 @@
 
 <div align="center">
 
-### ── ✦ About ✦ ──
+### About
 
 </div>
 
@@ -41,24 +41,24 @@ Currently open to **freelance work, collaborations, and startup-focused projects
 
 <div align="center">
 
-### ── ✦ Tech Stack ✦ ──
+### Tech Stack
 
 <br/>
 
 **Frontend**
 
 <img src="https://skillicons.dev/icons?i=nextjs,nuxtjs,vue,react,tailwind" /><br/><br/>
-<img src="https://img.shields.io/badge/ShadCN%2FUI-D5C5C8?style=flat-square&logoColor=604D53&color=D5C5C8&labelColor=604D53" />
-<img src="https://img.shields.io/badge/React%20Native-9DA3A4?style=flat-square&color=9DA3A4&labelColor=604D53" />
+<img src="https://img.shields.io/badge/ShadCN%2FUI-D183A9?style=flat-square&color=D183A9&labelColor=3A345B" />
+<img src="https://img.shields.io/badge/React%20Native-71557A?style=flat-square&color=71557A&labelColor=3A345B" />
 
 <br/><br/>
 
 **Backend & Data**
 
 <img src="https://skillicons.dev/icons?i=php,nodejs,express,supabase,python" /><br/><br/>
-<img src="https://img.shields.io/badge/Appwrite-DB7F8E?style=flat-square&color=DB7F8E&labelColor=604D53" />
-<img src="https://img.shields.io/badge/Stripe-D5C5C8?style=flat-square&color=D5C5C8&labelColor=604D53" />
-<img src="https://img.shields.io/badge/REST%20APIs-9DA3A4?style=flat-square&color=9DA3A4&labelColor=604D53" />
+<img src="https://img.shields.io/badge/Appwrite-4B1535?style=flat-square&color=4B1535&labelColor=3A345B" />
+<img src="https://img.shields.io/badge/Stripe-71557A?style=flat-square&color=71557A&labelColor=3A345B" />
+<img src="https://img.shields.io/badge/REST%20APIs-D183A9?style=flat-square&color=D183A9&labelColor=3A345B" />
 
 <br/><br/>
 
@@ -72,7 +72,7 @@ Currently open to **freelance work, collaborations, and startup-focused projects
 
 <div align="center">
 
-### ── ✦ Featured Work ✦ ──
+### Featured Work
 
 </div>
 
@@ -155,14 +155,14 @@ Conversion-focused NMDCAT prep platform — mentor pages, social proof, high-int
 
 <div align="center">
 
-### ── ✦ GitHub Stats ✦ ──
+### GitHub Stats
 
 <br/>
 
-<img src="https://github-readme-stats.vercel.app/api?username=sharyarnaveed&show_icons=true&hide_border=true&count_private=true&bg_color=00000000&title_color=DB7F8E&icon_color=DB7F8E&text_color=604D53" width="49%" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=sharyarnaveed&hide_border=true&background=00000000&ring=DB7F8E&fire=DB7F8E&currStreakLabel=DB7F8E&sideLabels=604D53&currStreakNum=604D53&sideNums=604D53&dates=9DA3A4" width="49%" />
+<img src="https://github-readme-stats.vercel.app/api?username=sharyarnaveed&show_icons=true&hide_border=true&count_private=true&bg_color=00000000&title_color=D183A9&icon_color=D183A9&text_color=F3C8DD" width="49%" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=sharyarnaveed&hide_border=true&background=00000000&ring=D183A9&fire=D183A9&currStreakLabel=D183A9&sideLabels=F3C8DD&currStreakNum=F3C8DD&sideNums=F3C8DD&dates=71557A" width="49%" />
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sharyarnaveed&layout=compact&hide_border=true&bg_color=00000000&title_color=DB7F8E&text_color=604D53" width="40%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sharyarnaveed&layout=compact&hide_border=true&bg_color=00000000&title_color=D183A9&text_color=F3C8DD" width="40%" />
 
 </div>
 
@@ -170,13 +170,13 @@ Conversion-focused NMDCAT prep platform — mentor pages, social proof, high-int
 
 <div align="center">
 
-### ── ✦ Let's Connect ✦ ──
+### Let's Connect
 
-[![Email](https://img.shields.io/badge/sharyarmalik430%40gmail.com-DB7F8E?style=for-the-badge&logoColor=white)](mailto:sharyarmalik430@gmail.com)
-[![GitHub](https://img.shields.io/badge/sharyarnaveed-604D53?style=for-the-badge&logoColor=white)](https://github.com/sharyarnaveed)
+[![Email](https://img.shields.io/badge/sharyarmalik430%40gmail.com-4B1535?style=for-the-badge&logoColor=white)](mailto:sharyarmalik430@gmail.com)
+[![GitHub](https://img.shields.io/badge/sharyarnaveed-3A345B?style=for-the-badge&logoColor=white)](https://github.com/sharyarnaveed)
 
 <sub><i>Thanks for visiting my profile.</i></sub>
 
-<img src="https://capsule-render.vercel.app/api?type=soft&color=0:9DA3A4,50:D5C5C8,100:FFDBDA&height=120&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&color=0:D183A9,50:71557A,100:3A345B&height=120&section=footer" width="100%"/>
 
 </div>
