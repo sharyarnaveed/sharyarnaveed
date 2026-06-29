@@ -1,0 +1,39 @@
+<svg width="1200" height="380" viewBox="0 0 1200 380" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3A345B"/>
+      <stop offset="45%" stop-color="#71557A"/>
+      <stop offset="80%" stop-color="#D183A9"/>
+      <stop offset="100%" stop-color="#F3C8DD"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="380" fill="url(#sky2)"/>
+
+  <circle cx="600" cy="120" r="58" fill="#F3C8DD" opacity="0.95"/>
+
+  <g opacity="0.7">
+    <circle cx="120" cy="50" r="2" fill="#F3C8DD"/>
+    <circle cx="220" cy="90" r="1.6" fill="#F3C8DD"/>
+    <circle cx="340" cy="40" r="2" fill="#F3C8DD"/>
+    <circle cx="470" cy="70" r="1.4" fill="#F3C8DD"/>
+    <circle cx="780" cy="55" r="2" fill="#F3C8DD"/>
+    <circle cx="900" cy="35" r="1.6" fill="#F3C8DD"/>
+    <circle cx="1020" cy="80" r="2" fill="#F3C8DD"/>
+    <circle cx="1120" cy="45" r="1.4" fill="#F3C8DD"/>
+    <circle cx="60" cy="120" r="1.4" fill="#F3C8DD"/>
+    <circle cx="1150" cy="130" r="1.6" fill="#F3C8DD"/>
+  </g>
+
+  <path d="M0,380 L0,230 Q120,170 260,210 Q380,245 520,195 Q650,150 800,205 Q930,250 1060,210 Q1140,185 1200,205 L1200,380 Z" fill="#71557A" opacity="0.55"/>
+
+  <path d="M0,380 L0,280 Q180,235 360,275 Q520,310 700,265 Q880,220 1050,270 Q1130,290 1200,265 L1200,380 Z" fill="#4B1535" opacity="0.7"/>
+
+  <path d="M0,380 L0,320 Q220,295 440,320 Q650,345 880,310 Q1040,285 1200,315 L1200,380 Z" fill="#26214a"/>
+
+  <g opacity="0.5">
+    <path d="M150,330 L150,300 M150,300 L130,310 M150,300 L170,308 M150,310 L135,318 M150,310 L165,317" stroke="#3A345B" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M1000,335 L1000,305 M1000,305 L982,314 M1000,305 L1018,313 M1000,315 L985,322 M1000,315 L1015,322" stroke="#3A345B" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M1080,340 L1080,312 M1080,312 L1064,320 M1080,312 L1096,319" stroke="#3A345B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,52 @@
+<svg width="420" height="340" viewBox="0 0 420 340" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .skin { fill: #D183A9; }
+      .hair { fill: #4B1535; }
+      .shirt { fill: #71557A; }
+      .desk { fill: #3A345B; }
+      .screen { fill: #26214a; }
+      .code1 { fill: #D183A9; }
+      .code2 { fill: #F3C8DD; }
+      .code3 { fill: #71557A; }
+      .mug { fill: #F3C8DD; }
+    </style>
+  </defs>
+
+  <ellipse cx="210" cy="300" rx="190" ry="22" fill="#4B1535" opacity="0.18"/>
+
+  <rect x="30" y="230" width="360" height="14" rx="4" class="desk"/>
+  <rect x="50" y="244" width="14" height="60" class="desk"/>
+  <rect x="356" y="244" width="14" height="60" class="desk"/>
+
+  <rect x="120" y="110" width="180" height="120" rx="8" class="screen"/>
+  <rect x="132" y="122" width="156" height="96" rx="4" fill="#3A345B"/>
+
+  <rect x="144" y="136" width="60" height="6" rx="3" class="code1"/>
+  <rect x="144" y="150" width="100" height="6" rx="3" class="code2"/>
+  <rect x="144" y="164" width="40" height="6" rx="3" class="code3"/>
+  <rect x="156" y="178" width="80" height="6" rx="3" class="code1"/>
+  <rect x="156" y="192" width="60" height="6" rx="3" class="code2"/>
+  <rect x="144" y="206" width="30" height="6" rx="3" class="code3"/>
+
+  <rect x="195" y="230" width="30" height="14" class="desk"/>
+
+  <circle cx="210" cy="60" r="34" class="skin"/>
+  <path d="M176,55 Q176,20 210,20 Q244,20 244,55 Q244,40 210,38 Q176,40 176,55 Z" class="hair"/>
+
+  <path d="M160,230 Q160,160 210,160 Q260,160 260,230 Z" class="shirt"/>
+
+  <rect x="64" y="200" width="36" height="44" rx="6" class="desk" opacity="0.85"/>
+  <rect x="70" y="206" width="24" height="6" rx="3" class="mug"/>
+
+  <rect x="330" y="190" width="28" height="40" rx="14" class="mug" opacity="0.9"/>
+  <rect x="338" y="178" width="4" height="16" fill="#71557A" opacity="0.6"/>
+  <rect x="346" y="174" width="4" height="20" fill="#71557A" opacity="0.5"/>
+
+  <g opacity="0.55">
+    <circle cx="60" cy="60" r="2" fill="#F3C8DD"/>
+    <circle cx="90" cy="40" r="1.6" fill="#F3C8DD"/>
+    <circle cx="350" cy="50" r="2" fill="#F3C8DD"/>
+    <circle cx="380" cy="80" r="1.6" fill="#F3C8DD"/>
+  </g>
+</svg>
