@@ -1,29 +1,29 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=soft&color=0:3A345B,50:71557A,100:D183A9&height=200&section=header&text=Sharyar%20Naveed&fontSize=46&fontColor=F3C8DD&animation=fadeIn&fontAlignY=40&desc=Web%20Developer%20%C2%B7%20Creative%20Developer&descAlignY=58&descSize=18&descColor=F3C8DD" width="100%"/>
-
-<a href="https://github.com/sharyarnaveed">
-  <img src="https://readme-typing-svg.demolab.com?font=Doto&size=22&pause=1400&color=D183A9&center=true&vCenter=true&width=720&height=32&weight=700&lines=Building+full-stack+products+from+concept+to+deployment;Next.js+%C2%B7+Nuxt.js+%C2%B7+React+Native+%C2%B7+Supabase;750%2B+users+on+Timetablr+%E2%80%94+shipped+and+growing;Open+to+freelance%2C+collaborations+%26+startup-focused+work" alt="Typing SVG" />
-</a>
+<img src="./assets/banner-header.svg" width="100%"/>
 
 <br/>
+
+<a href="https://github.com/sharyarnaveed">
+  <img src="https://readme-typing-svg.demolab.com?font=Doto&size=20&pause=1400&color=D183A9&center=true&vCenter=true&width=720&height=32&weight=700&lines=Building+full-stack+products+from+concept+to+deployment;Next.js+%C2%B7+Nuxt.js+%C2%B7+React+Native+%C2%B7+Supabase;750%2B+users+on+Timetablr+%E2%80%94+shipped+and+growing;Open+to+freelance%2C+collaborations+%26+startup-focused+work" alt="Typing SVG" />
+</a>
+
+<br/><br/>
 
 <a href="mailto:sharyarmalik430@gmail.com">
-  <img src="https://img.shields.io/badge/Email-4B1535?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/EMAIL-4B1535?style=for-the-badge&logoColor=F3C8DD" />
 </a>
 <a href="https://github.com/sharyarnaveed">
-  <img src="https://img.shields.io/badge/GitHub-3A345B?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/GITHUB-3A345B?style=for-the-badge&logoColor=F3C8DD" />
 </a>
 
 </div>
 
 <br/>
 
-<div align="center">
+<img src="./assets/banner-about.svg" width="100%"/>
 
-### About
-
-</div>
+<br/>
 
 <table width="100%">
 <tr>
@@ -39,9 +39,11 @@ Currently open to **freelance work, collaborations, and startup-focused projects
 
 <br/>
 
-<div align="center">
+<img src="./assets/banner-tech.svg" width="100%"/>
 
-### Tech Stack
+<br/>
+
+<div align="center">
 
 <br/>
 
@@ -70,11 +72,9 @@ Currently open to **freelance work, collaborations, and startup-focused projects
 
 <br/>
 
-<div align="center">
+<img src="./assets/banner-work.svg" width="100%"/>
 
-### Featured Work
-
-</div>
+<br/>
 
 <table width="100%">
 <tr>
@@ -153,30 +153,36 @@ Conversion-focused NMDCAT prep platform — mentor pages, social proof, high-int
 
 <br/>
 
-<div align="center">
-
-### GitHub Stats
+<img src="./assets/banner-stats.svg" width="100%"/>
 
 <br/>
 
-<img src="https://github-readme-stats.vercel.app/api?username=sharyarnaveed&show_icons=true&hide_border=true&count_private=true&bg_color=00000000&title_color=D183A9&icon_color=D183A9&text_color=F3C8DD" width="49%" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=sharyarnaveed&hide_border=true&background=00000000&ring=D183A9&fire=D183A9&currStreakLabel=D183A9&sideLabels=F3C8DD&currStreakNum=F3C8DD&sideNums=F3C8DD&dates=71557A" width="49%" />
+<div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sharyarnaveed&layout=compact&hide_border=true&bg_color=00000000&title_color=D183A9&text_color=F3C8DD" width="40%" />
+<br/>
+
+<img src="https://github-readme-stats.vercel.app/api?username=sharyarnaveed&show_icons=true&hide_border=true&count_private=true&bg_color=3A345B&title_color=F3C8DD&icon_color=D183A9&text_color=D183A9" width="49%" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=sharyarnaveed&hide_border=true&background=3A345B&ring=D183A9&fire=D183A9&currStreakLabel=F3C8DD&sideLabels=D183A9&currStreakNum=F3C8DD&sideNums=D183A9&dates=71557A" width="49%" />
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sharyarnaveed&layout=compact&hide_border=true&bg_color=3A345B&title_color=F3C8DD&text_color=D183A9" width="40%" />
 
 </div>
 
 <br/>
 
+<img src="./assets/banner-connect.svg" width="100%"/>
+
+<br/>
+
 <div align="center">
 
-### Let's Connect
+<br/>
 
-[![Email](https://img.shields.io/badge/sharyarmalik430%40gmail.com-4B1535?style=for-the-badge&logoColor=white)](mailto:sharyarmalik430@gmail.com)
-[![GitHub](https://img.shields.io/badge/sharyarnaveed-3A345B?style=for-the-badge&logoColor=white)](https://github.com/sharyarnaveed)
+[![Email](https://img.shields.io/badge/sharyarmalik430%40gmail.com-4B1535?style=for-the-badge&logoColor=F3C8DD)](mailto:sharyarmalik430@gmail.com)
+[![GitHub](https://img.shields.io/badge/sharyarnaveed-3A345B?style=for-the-badge&logoColor=F3C8DD)](https://github.com/sharyarnaveed)
 
-<sub><i>Thanks for visiting my profile.</i></sub>
+<br/>
 
-<img src="https://capsule-render.vercel.app/api?type=soft&color=0:D183A9,50:71557A,100:3A345B&height=120&section=footer" width="100%"/>
+<img src="./assets/banner-footer.svg" width="100%"/>
 
 </div>
