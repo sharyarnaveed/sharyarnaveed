@@ -10,43 +10,70 @@
       .code2 { fill: #F3C8DD; }
       .code3 { fill: #71557A; }
       .mug { fill: #F3C8DD; }
+      .cursor-blink { animation: blink 1.2s step-end infinite; }
+      .screen-glow { animation: screenglow 3s ease-in-out infinite; }
+      .float-char { animation: charfloat 4s ease-in-out infinite; }
+      @keyframes blink { 0%,100% { opacity:1; } 50% { opacity:0; } }
+      @keyframes screenglow { 0%,100% { opacity:0.08; } 50% { opacity:0.2; } }
+      @keyframes charfloat { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-3px); } }
     </style>
+    <filter id="screenGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
 
+  <!-- Shadow -->
   <ellipse cx="210" cy="300" rx="190" ry="22" fill="#4B1535" opacity="0.18"/>
 
+  <!-- Desk -->
   <rect x="30" y="230" width="360" height="14" rx="4" class="desk"/>
   <rect x="50" y="244" width="14" height="60" class="desk"/>
   <rect x="356" y="244" width="14" height="60" class="desk"/>
 
+  <!-- Monitor with glow -->
+  <rect x="118" y="108" width="184" height="124" rx="10" class="screen" filter="url(#screenGlow)"/>
   <rect x="120" y="110" width="180" height="120" rx="8" class="screen"/>
   <rect x="132" y="122" width="156" height="96" rx="4" fill="#3A345B"/>
 
-  <rect x="144" y="136" width="60" height="6" rx="3" class="code1"/>
-  <rect x="144" y="150" width="100" height="6" rx="3" class="code2"/>
-  <rect x="144" y="164" width="40" height="6" rx="3" class="code3"/>
-  <rect x="156" y="178" width="80" height="6" rx="3" class="code1"/>
-  <rect x="156" y="192" width="60" height="6" rx="3" class="code2"/>
-  <rect x="144" y="206" width="30" height="6" rx="3" class="code3"/>
+  <!-- Ambient glow from screen -->
+  <rect x="132" y="122" width="156" height="96" rx="4" fill="#D183A9" class="screen-glow"/>
 
+  <!-- Code lines -->
+  <rect x="144" y="135" width="65" height="5" rx="2.5" class="code1"/>
+  <rect x="144" y="148" width="105" height="5" rx="2.5" class="code2"/>
+  <rect x="144" y="161" width="42" height="5" rx="2.5" class="code3"/>
+  <rect x="156" y="174" width="85" height="5" rx="2.5" class="code1"/>
+  <rect x="156" y="187" width="62" height="5" rx="2.5" class="code2"/>
+  <rect x="144" y="200" width="32" height="5" rx="2.5" class="code3"/>
+
+  <!-- Blinking cursor -->
+  <rect x="180" y="200" width="8" height="5" rx="1" fill="#F3C8DD" class="cursor-blink"/>
+
+  <!-- Monitor stand -->
   <rect x="195" y="230" width="30" height="14" class="desk"/>
 
+  <!-- Person head -->
   <circle cx="210" cy="60" r="34" class="skin"/>
   <path d="M176,55 Q176,20 210,20 Q244,20 244,55 Q244,40 210,38 Q176,40 176,55 Z" class="hair"/>
 
+  <!-- Body/shirt -->
   <path d="M160,230 Q160,160 210,160 Q260,160 260,230 Z" class="shirt"/>
 
+  <!-- Mug/notebook left -->
   <rect x="64" y="200" width="36" height="44" rx="6" class="desk" opacity="0.85"/>
-  <rect x="70" y="206" width="24" height="6" rx="3" class="mug"/>
+  <rect x="70" y="206" width="24" height="5" rx="2.5" class="mug"/>
+  <rect x="70" y="215" width="18" height="5" rx="2.5" fill="#D183A9" opacity="0.5"/>
 
+  <!-- Plant right (instead of pencil) -->
   <rect x="330" y="190" width="28" height="40" rx="14" class="mug" opacity="0.9"/>
-  <rect x="338" y="178" width="4" height="16" fill="#71557A" opacity="0.6"/>
-  <rect x="346" y="174" width="4" height="20" fill="#71557A" opacity="0.5"/>
+  <rect x="338" y="175" width="4" height="18" fill="#71557A" opacity="0.65" class="float-char"/>
+  <rect x="346" y="170" width="4" height="23" fill="#71557A" opacity="0.5" class="float-char" style="animation-delay:0.5s"/>
+  <rect x="354" y="177" width="3" height="16" fill="#D183A9" opacity="0.4" class="float-char" style="animation-delay:1s"/>
 
-  <g opacity="0.55">
-    <circle cx="60" cy="60" r="2" fill="#F3C8DD"/>
-    <circle cx="90" cy="40" r="1.6" fill="#F3C8DD"/>
-    <circle cx="350" cy="50" r="2" fill="#F3C8DD"/>
-    <circle cx="380" cy="80" r="1.6" fill="#F3C8DD"/>
-  </g>
+  <!-- Floating sparkles -->
+  <circle cx="60" cy="60" r="2" fill="#F3C8DD" opacity="0.6" class="float-char"/>
+  <circle cx="90" cy="40" r="1.6" fill="#F3C8DD" opacity="0.5" class="float-char" style="animation-delay:0.8s"/>
+  <circle cx="350" cy="50" r="2" fill="#D183A9" opacity="0.5" class="float-char" style="animation-delay:0.4s"/>
+  <circle cx="380" cy="80" r="1.6" fill="#F3C8DD" opacity="0.4" class="float-char" style="animation-delay:1.2s"/>
 </svg>

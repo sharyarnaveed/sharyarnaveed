@@ -1,0 +1,44 @@
+<svg width="1200" height="80" viewBox="0 0 1200 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dividerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3A345B" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#71557A"/>
+      <stop offset="50%" stop-color="#D183A9"/>
+      <stop offset="80%" stop-color="#71557A"/>
+      <stop offset="100%" stop-color="#3A345B" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      .shimmer { animation: shimmer 3s ease-in-out infinite; }
+      @keyframes shimmer { 0%,100% { opacity:0.5; } 50% { opacity:1; } }
+    </style>
+  </defs>
+  <rect width="1200" height="80" fill="#1a1530"/>
+  <!-- Dot row top -->
+  <g opacity="0.18" class="shimmer">
+    <circle cx="100" cy="28" r="1.5" fill="#D183A9"/>
+    <circle cx="200" cy="28" r="1.5" fill="#F3C8DD"/>
+    <circle cx="300" cy="28" r="1.5" fill="#D183A9"/>
+    <circle cx="400" cy="28" r="1.5" fill="#F3C8DD"/>
+    <circle cx="500" cy="28" r="1.5" fill="#D183A9"/>
+    <circle cx="600" cy="28" r="1.5" fill="#F3C8DD"/>
+    <circle cx="700" cy="28" r="1.5" fill="#D183A9"/>
+    <circle cx="800" cy="28" r="1.5" fill="#F3C8DD"/>
+    <circle cx="900" cy="28" r="1.5" fill="#D183A9"/>
+    <circle cx="1000" cy="28" r="1.5" fill="#F3C8DD"/>
+    <circle cx="1100" cy="28" r="1.5" fill="#D183A9"/>
+  </g>
+  <rect x="100" y="39" width="1000" height="1.5" rx="1" fill="url(#dividerGrad)" class="shimmer"/>
+  <!-- Dot row bottom -->
+  <g opacity="0.18" class="shimmer" style="animation-delay:1.5s">
+    <circle cx="150" cy="52" r="1.5" fill="#71557A"/>
+    <circle cx="250" cy="52" r="1.5" fill="#D183A9"/>
+    <circle cx="350" cy="52" r="1.5" fill="#71557A"/>
+    <circle cx="450" cy="52" r="1.5" fill="#D183A9"/>
+    <circle cx="550" cy="52" r="1.5" fill="#71557A"/>
+    <circle cx="650" cy="52" r="1.5" fill="#D183A9"/>
+    <circle cx="750" cy="52" r="1.5" fill="#71557A"/>
+    <circle cx="850" cy="52" r="1.5" fill="#D183A9"/>
+    <circle cx="950" cy="52" r="1.5" fill="#71557A"/>
+    <circle cx="1050" cy="52" r="1.5" fill="#D183A9"/>
+  </g>
+</svg>

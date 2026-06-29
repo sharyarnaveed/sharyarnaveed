@@ -1,39 +1,72 @@
-<svg width="1200" height="380" viewBox="0 0 1200 380" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="400" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#3A345B"/>
-      <stop offset="45%" stop-color="#71557A"/>
-      <stop offset="80%" stop-color="#D183A9"/>
+      <stop offset="0%" stop-color="#26214a"/>
+      <stop offset="35%" stop-color="#3A345B"/>
+      <stop offset="65%" stop-color="#71557A"/>
+      <stop offset="85%" stop-color="#D183A9"/>
       <stop offset="100%" stop-color="#F3C8DD"/>
     </linearGradient>
+    <linearGradient id="glowRing" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F3C8DD"/>
+      <stop offset="100%" stop-color="#D183A9"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .label { font-family: 'Courier New', monospace; font-size: 20px; letter-spacing: 10px; fill: #F3C8DD; font-weight: 900; text-anchor: middle; }
+      .sub { font-family: 'Courier New', monospace; font-size: 11px; letter-spacing: 5px; fill: #D183A9; font-weight: 700; text-anchor: middle; opacity: 0.8; }
+      .pulse { animation: pulse 2.5s ease-in-out infinite; }
+      .float { animation: float 4s ease-in-out infinite; }
+      .dot-anim { animation: dotpulse 3s ease-in-out infinite; }
+      @keyframes pulse { 0%,100% { opacity:0.5; } 50% { opacity:1; } }
+      @keyframes float { 0%,100% { transform:translateY(0px); } 50% { transform:translateY(-10px); } }
+      @keyframes dotpulse { 0%,100% { opacity:0.3; r:1.5; } 50% { opacity:0.9; r:2.5; } }
+    </style>
   </defs>
 
-  <rect width="1200" height="380" fill="url(#sky2)"/>
+  <rect width="1200" height="400" fill="url(#sky2)"/>
 
-  <circle cx="600" cy="120" r="58" fill="#F3C8DD" opacity="0.95"/>
+  <!-- Ambient glow circles -->
+  <circle cx="200" cy="160" r="80" fill="#D183A9" opacity="0.06" filter="url(#glow)"/>
+  <circle cx="1000" cy="140" r="70" fill="#71557A" opacity="0.08" filter="url(#glow)"/>
 
-  <g opacity="0.7">
-    <circle cx="120" cy="50" r="2" fill="#F3C8DD"/>
-    <circle cx="220" cy="90" r="1.6" fill="#F3C8DD"/>
-    <circle cx="340" cy="40" r="2" fill="#F3C8DD"/>
-    <circle cx="470" cy="70" r="1.4" fill="#F3C8DD"/>
-    <circle cx="780" cy="55" r="2" fill="#F3C8DD"/>
-    <circle cx="900" cy="35" r="1.6" fill="#F3C8DD"/>
-    <circle cx="1020" cy="80" r="2" fill="#F3C8DD"/>
-    <circle cx="1120" cy="45" r="1.4" fill="#F3C8DD"/>
-    <circle cx="60" cy="120" r="1.4" fill="#F3C8DD"/>
-    <circle cx="1150" cy="130" r="1.6" fill="#F3C8DD"/>
-  </g>
+  <!-- Stars / floating dots -->
+  <circle cx="120" cy="55" r="1.8" fill="#F3C8DD" class="dot-anim" style="animation-delay:0s"/>
+  <circle cx="230" cy="95" r="1.5" fill="#F3C8DD" class="dot-anim" style="animation-delay:0.4s"/>
+  <circle cx="360" cy="45" r="1.8" fill="#F3C8DD" class="dot-anim" style="animation-delay:0.8s"/>
+  <circle cx="490" cy="75" r="1.5" fill="#F3C8DD" class="dot-anim" style="animation-delay:1.2s"/>
+  <circle cx="610" cy="38" r="1.8" fill="#F3C8DD" class="dot-anim" style="animation-delay:0.3s"/>
+  <circle cx="750" cy="62" r="1.5" fill="#F3C8DD" class="dot-anim" style="animation-delay:0.7s"/>
+  <circle cx="880" cy="42" r="1.8" fill="#F3C8DD" class="dot-anim" style="animation-delay:1.1s"/>
+  <circle cx="1010" cy="80" r="1.5" fill="#F3C8DD" class="dot-anim" style="animation-delay:0.2s"/>
+  <circle cx="1120" cy="50" r="1.8" fill="#F3C8DD" class="dot-anim" style="animation-delay:0.6s"/>
+  <circle cx="65" cy="135" r="1.5" fill="#F3C8DD" class="dot-anim" style="animation-delay:1.0s"/>
+  <circle cx="1165" cy="120" r="1.8" fill="#F3C8DD" class="dot-anim" style="animation-delay:0.5s"/>
 
-  <path d="M0,380 L0,230 Q120,170 260,210 Q380,245 520,195 Q650,150 800,205 Q930,250 1060,210 Q1140,185 1200,205 L1200,380 Z" fill="#71557A" opacity="0.55"/>
+  <!-- Central moon/orb -->
+  <circle cx="600" cy="130" r="62" fill="#F3C8DD" opacity="0.92" filter="url(#glow)" class="pulse"/>
+  <circle cx="600" cy="130" r="50" fill="#F3C8DD"/>
+  <circle cx="618" cy="116" r="8" fill="#D183A9" opacity="0.25"/>
+  <circle cx="590" cy="148" r="5" fill="#71557A" opacity="0.15"/>
 
-  <path d="M0,380 L0,280 Q180,235 360,275 Q520,310 700,265 Q880,220 1050,270 Q1130,290 1200,265 L1200,380 Z" fill="#4B1535" opacity="0.7"/>
+  <!-- Centered closing text -->
+  <text x="600" y="215" class="label">THANKS FOR VISITING</text>
+  <text x="600" y="238" class="sub">LET'S BUILD SOMETHING REAL · sharyarnaveed</text>
 
-  <path d="M0,380 L0,320 Q220,295 440,320 Q650,345 880,310 Q1040,285 1200,315 L1200,380 Z" fill="#26214a"/>
+  <!-- Bottom landscape waves -->
+  <path d="M0,400 L0,250 Q120,195 280,230 Q420,265 560,210 Q690,160 840,220 Q980,265 1120,225 Q1160,210 1200,220 L1200,400 Z" fill="#71557A" opacity="0.5"/>
+  <path d="M0,400 L0,295 Q180,250 360,288 Q520,320 700,278 Q880,238 1060,282 Q1140,300 1200,278 L1200,400 Z" fill="#4B1535" opacity="0.75"/>
+  <path d="M0,400 L0,330 Q220,308 440,332 Q650,355 880,322 Q1040,298 1200,328 L1200,400 Z" fill="#3A345B" opacity="0.9"/>
+  <path d="M0,400 L0,365 Q280,352 560,370 Q840,384 1120,362 Q1160,358 1200,364 L1200,400 Z" fill="#26214a"/>
 
-  <g opacity="0.5">
-    <path d="M150,330 L150,300 M150,300 L130,310 M150,300 L170,308 M150,310 L135,318 M150,310 L165,317" stroke="#3A345B" stroke-width="3" stroke-linecap="round" fill="none"/>
-    <path d="M1000,335 L1000,305 M1000,305 L982,314 M1000,305 L1018,313 M1000,315 L985,322 M1000,315 L1015,322" stroke="#3A345B" stroke-width="3" stroke-linecap="round" fill="none"/>
-    <path d="M1080,340 L1080,312 M1080,312 L1064,320 M1080,312 L1096,319" stroke="#3A345B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Silhouette trees -->
+  <g opacity="0.45">
+    <path d="M150,340 L150,305 M150,305 L128,317 M150,305 L172,316 M150,316 L132,326 M150,316 L168,325" stroke="#3A345B" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M980,345 L980,310 M980,310 L960,322 M980,310 L1000,321 M980,322 L963,332 M980,322 L997,330" stroke="#3A345B" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M1075,350 L1075,318 M1075,318 L1058,328 M1075,318 L1092,327" stroke="#3A345B" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M220,345 L220,316 M220,316 L203,325 M220,316 L237,324" stroke="#3A345B" stroke-width="2.5" stroke-linecap="round" fill="none"/>
   </g>
 </svg>
