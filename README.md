@@ -89,18 +89,10 @@
 
 <div align="center">
 
-<img
-  src="https://github-readme-stats.vercel.app/api?username=sharyarnaveed&show_icons=true&theme=transparent&hide_border=true&title_color=%23F3C8DD&icon_color=%23D183A9&text_color=%23F3C8DD&ring_color=%2371557A&bg_color=%233A345B&count_private=true&include_all_commits=true&rank_icon=github"
-  width="48%"
-/>&nbsp;<img
-  src="https://github-readme-stats.vercel.app/api/top-langs/?username=sharyarnaveed&layout=compact&theme=transparent&hide_border=true&title_color=%23F3C8DD&text_color=%23F3C8DD&bg_color=%233A345B&langs_count=8"
-  width="38%"
-/>
 
-<br/><br/>
 
 <img
-  src="https://streak-stats.demolab.com?user=sharyarnaveed&theme=transparent&hide_border=true&background=%233A345B&ring=%23D183A9&fire=%23F3C8DD&currStreakLabel=%23F3C8DD&sideLabels=%23D183A9&dates=%23F3C8DD&sideNums=%23F3C8DD&currStreakNum=%23F3C8DD&stroke=%2371557A&font=Doto"
+  src="https://streak-stats.demolab.com?user=sharyarnaveed&theme=transparent&hide_border=true&background=3A345B&ring=D183A9&fire=F3C8DD&currStreakLabel=F3C8DD&sideLabels=D183A9&dates=F3C8DD&sideNums=F3C8DD&currStreakNum=F3C8DD&stroke=71557A&font=Doto"
   width="70%"
 />
 
