@@ -16,7 +16,7 @@
 <div align="center">
 
 <a href="https://github.com/sharyarnaveed">
-  <img src="https://readme-typing-svg.demolab.com?font=Doto&size=18&pause=1400&color=D183A9&center=true&vCenter=true&width=760&height=34&weight=900&lines=Namaste%2C+I'm+Sharyar+%E2%80%94+Web+%26+Creative+Developer;Building+full-stack+products+from+concept+to+deployment;Timetablr+%E2%80%94+750%2B+active+university+users+%26+growing;Currently+open+to+freelance+%26+startup+projects" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Doto&size=18&pause=1400&color=D183A9&center=true&vCenter=true&width=760&height=34&weight=900&lines=Hi%2C+I'm+Sharyar+%E2%80%94+Web+%26+Creative+Developer;Building+full-stack+products+from+concept+to+deployment;Timetablr+%E2%80%94+750%2B+active+university+users+%26+growing;Currently+open+to+freelance+%26+startup+projects" alt="Typing SVG" />
 </a>
 
 </div>
