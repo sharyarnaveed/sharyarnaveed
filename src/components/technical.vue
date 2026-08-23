@@ -1,87 +1,72 @@
 <script setup>
 defineProps({
-    theexpert: String,
-    logoimg: String,
-    theotherlogo: String
+  theexpert: { type: String, required: true },
+  logoimg: { type: String, required: true },
+  tone: { type: String, default: "yellow" },
+  tilt: { type: String, default: "0deg" },
 });
 </script>
 
 <template>
-  <div class="skill-item">
-    <div class="skill-info">
-      <h4 class="skill-title">{{ theexpert }}</h4>
-    </div>
-    <div class="skill-logos">
-      <div class="logo-wrapper">
-        <img :src="logoimg" :alt="theexpert" />
-      </div>
-      <div v-if="theotherlogo" class="logo-wrapper">
-        <img :src="theotherlogo" alt="Secondary skill" />
-      </div>
-    </div>
+  <div class="tool" :class="`tool--${tone}`" :style="{ '--tilt': tilt }">
+    <img class="tool__logo" :src="logoimg" :alt="`${theexpert} logo`" loading="lazy" />
+    <span class="tool__name">{{ theexpert }}</span>
   </div>
 </template>
 
 <style scoped>
-.skill-item {
-  display: flex;
-  justify-content: space-between;
+.tool {
+  display: inline-flex;
   align-items: center;
-  padding: 1.25rem 0;
-  border-bottom: 1px solid var(--border-color);
-  transition: all 0.3s var(--ease-out-expo);
+  gap: 0.55rem;
+  padding: 0.5rem 0.85rem;
+  background: var(--swatch, var(--yellow));
+  border-radius: 3px 8px 4px 9px;
+  transform: rotate(var(--tilt)) skewX(-2deg);
+  transition: transform 0.3s var(--ease-back), filter 0.3s var(--ease);
 }
 
-.skill-item:hover {
-  padding-left: 1rem;
-  background: rgba(0, 0, 0, 0.02);
-  border-radius: 12px;
+.tool:hover {
+  transform: rotate(0deg) skewX(0deg) translateY(-3px);
+  filter: saturate(1.15);
 }
 
-.skill-item:last-child {
-  border-bottom: none;
-}
-
-.skill-info {
-  flex: 1;
-}
-
-.skill-title {
-  font-family: var(--writingfont);
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--text-primary);
-  letter-spacing: -0.01em;
-}
-
-.skill-logos {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.logo-wrapper {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--bg-secondary);
-  border-radius: 10px;
-  padding: 8px;
-  border: 1px solid var(--border-color);
-  transition: all 0.3s var(--ease-out-expo);
-}
-
-.logo-wrapper:hover {
-  transform: scale(1.1);
-  background: #ffffff;
-  border-color: var(--bg-dark);
-}
-
-.logo-wrapper img {
-  width: 100%;
-  height: 100%;
+.tool__logo {
+  width: 22px;
+  height: 22px;
   object-fit: contain;
+  flex-shrink: 0;
+}
+
+.tool__name {
+  font-family: var(--font-stamp);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.tool--yellow {
+  --swatch: var(--yellow);
+}
+.tool--pink {
+  --swatch: var(--pink);
+}
+.tool--blue {
+  --swatch: var(--blue);
+}
+.tool--green {
+  --swatch: var(--green);
+}
+.tool--mint {
+  --swatch: var(--mint);
+}
+.tool--lilac {
+  --swatch: var(--lilac);
+}
+.tool--orange {
+  --swatch: var(--orange);
 }
 </style>
