@@ -13,10 +13,9 @@ const projects = [
     featured: true,
     note: "class schedules, Redis caching + AI agents, used by 750+ students",
     description:
-      "A cross-platform student timetable app published on the Google Play Store and used by 750+ university students. Originally built as a Vue.js PWA, then migrated to React Native (Expo) for better performance and native capabilities. Added Redis caching (cache-aside with batched lookups) to cut database load, AI agent and tool-calling workflows for intelligent in-app features, and automated push notifications 10 minutes before every class.",
-    tags: ["React Native (Expo)", "Redis", "AI Agents", "Express.js", "Push Notifications"],
+      "A cross platform student timetable app published on the Google Play Store and used by 750+ university students. Originally built as a Vue.js PWA, then migrated to React Native with Expo for better performance and native capabilities. Added Redis caching with batched lookups to cut database load, AI agent and tool calling workflows for intelligent in app features, and automated push notifications 10 minutes before every class.",
+    tags: ["React Native Expo", "Redis", "AI Agents", "Express.js", "Push Notifications"],
     image: "/timetablr.png",
-    github: "https://github.com/sharyarnaveed/timetablrmobile.git",
     live: "https://www.timetablr.tech/",
     tone: "yellow",
   },
@@ -25,22 +24,36 @@ const projects = [
     role: "Full Stack Developer",
     year: "2025",
     featured: true,
-    note: "multi-portal order management for a global K-Beauty wholesaler",
+    note: "multi portal order management for a global K Beauty wholesaler",
     description:
-      "Built and maintained an advanced multi-portal Order Management System (OMS) for Peacock Wholesale, a global K-Beauty wholesale platform. Developed a scalable full-stack system using Next.js, React, TypeScript, and Supabase, featuring vendor management, order assignment workflows, payout and transaction management through Wise and Airwallex, CRM automation, logistics handling, and finance reconciliation. Integrated Intercom for real-time customer support and ticket synchronization. Implemented role-based access control, multi-tenant portals, automated payout routing, inventory workflows, document management, and analytics dashboards to streamline wholesale operations and partner coordination.",
+      "Built and maintained an advanced multi portal Order Management System for Peacock Wholesale, a global K Beauty wholesale platform. Developed a scalable full stack system using Next.js, React, TypeScript, and Supabase, featuring vendor management, order assignment workflows, payout and transaction management through Wise and Airwallex, CRM automation, logistics handling, and finance reconciliation. Integrated Intercom for real time customer support and ticket synchronization. Implemented role based access control, multi tenant portals, automated payout routing, inventory workflows, document management, and analytics dashboards to streamline wholesale operations and partner coordination.",
     tags: ["Next.js", "React", "TypeScript", "Supabase", "Intercom", "Airwallex"],
     image: "/peacock-wholesale.png",
     live: "https://peacockwholesale.io/products",
     tone: "ink",
   },
   {
+    title: "Backloom",
+    role: "CLI Tool",
+    year: "2026",
+    featured: true,
+    note: "scaffold Express and Fastify backends with one command",
+    description:
+      "An npm published CLI that scaffolds production ready backend projects from starter templates. Prompts for project name, framework (Express or Fastify), and language (JavaScript or TypeScript), then generates a full project skeleton with config, controllers, routes, services, and middleware, replaces placeholders, and runs npm install automatically. Available via npx backloom init.",
+    tags: ["CLI", "Node.js", "TypeScript", "Express", "Fastify", "npm"],
+    image: "/backloom.png",
+    github: "https://github.com/sharyarnaveed/Backloom",
+    live: "https://www.npmjs.com/package/backloom",
+    tone: "yellow",
+  },
+  {
     title: "Prepzy",
     role: "Final Year Project",
     year: "Currently working",
-    note: "a fine-tuned Qwen 2.5 tutor for FSc and pre-medical students",
+    note: "a fine tuned Qwen 2.5 tutor for FSc and pre medical students",
     description:
-      "An AI-powered exam preparation platform for Pakistani FSc and pre-medical students. I fine-tuned the Qwen 2.5 3B Instruct model on a custom-curated FSc curriculum dataset to create a domain-specific AI tutor that answers subject questions with academic accuracy. The platform analyzes each user's quiz scores and performance patterns to recommend targeted practice and flag weak topics, and ships an AI quiz generator, smart document summarizer, study planner, and performance dashboard for NMDCAT and ETEA aspirants.",
-    tags: ["Qwen 2.5", "Fine-Tuning", "Next.js", "Python", "Supabase"],
+      "An AI powered exam preparation platform for Pakistani FSc and pre medical students. I fine tuned the Qwen 2.5 3B Instruct model on a custom curated FSc curriculum dataset to create a domain specific AI tutor that answers subject questions with academic accuracy. The platform analyzes each user's quiz scores and performance patterns to recommend targeted practice and flag weak topics, and ships an AI quiz generator, smart document summarizer, study planner, and performance dashboard for NMDCAT and ETEA aspirants.",
+    tags: ["Qwen 2.5", "Fine Tuning", "Next.js", "Python", "Supabase"],
     image: "/fyp.png",
     live: "https://prepzy.tech/",
     tone: "ink",
@@ -49,9 +62,9 @@ const projects = [
     title: "Medistry",
     role: "Landing Platform",
     year: "2026",
-    note: "conversion-focused NMDCAT prep platform for medical aspirants",
+    note: "conversion focused NMDCAT prep platform for medical aspirants",
     description:
-      "Built and deployed a conversion-focused NMDCAT prep platform for medical aspirants, featuring PMDC-aligned program pages, mentor profiles, social proof, and high-intent CTA flows for demo, diagnostics, and enrollment.",
+      "Built and deployed a conversion focused NMDCAT prep platform for medical aspirants, featuring PMDC aligned program pages, mentor profiles, social proof, and high intent CTA flows for demo, diagnostics, and enrollment.",
     tags: ["Next.js", "EdTech", "Landing Page", "NMDCAT", "Conversion UI"],
     image: "/medistry.png",
     live: "https://www.medistry.pk/",
@@ -61,9 +74,9 @@ const projects = [
     title: "Bonny",
     role: "Backend",
     year: "2025",
-    note: "maps, Stripe coupons + single-use QR redemption",
+    note: "maps, Stripe coupons + single use QR redemption",
     description:
-      "Built the complete backend for a location-based restaurant discount platform. Implemented Stripe payment processing for coupon purchases, interactive map integration for nearby restaurant discovery, and server-side QR code generation with single-use validation logic to prevent fraud, alongside RESTful APIs managing restaurants, payments, and real-time redemption workflows.",
+      "Built the complete backend for a location based restaurant discount platform. Implemented Stripe payment processing for coupon purchases, interactive map integration for nearby restaurant discovery, and server side QR code generation with single use validation logic to prevent fraud, alongside REST APIs managing restaurants, payments, and real time redemption workflows.",
     tags: ["Node.js", "Express.js", "Stripe API", "QR Code", "Maps API", "PostgreSQL"],
     image: "/bonny.png",
     live: "https://www.bonny.at/",
@@ -73,9 +86,9 @@ const projects = [
     title: "Spelling Bee",
     role: "Realtime Game",
     year: "2025",
-    note: "real-time multiplayer spelling battles",
+    note: "real time multiplayer spelling battles",
     description:
-      "Built a real-time Spelling Bee multiplayer application using Appwrite as the database and Nuxt.js as the FullStack Framework.",
+      "Built a real time Spelling Bee multiplayer application using Appwrite as the database and Nuxt.js as the full stack framework.",
     tags: ["Nuxt.js", "Appwrite", "Vue.js", "Socket.io"],
     image: "/spellinhome.png",
     github: "https://github.com/sharyarnaveed/spelling-bee.git",
@@ -88,7 +101,7 @@ const projects = [
     year: "2025",
     note: "tournament, match and reward APIs for a UNO gaming platform",
     description:
-      "Developed the backend and admin panel for Plyzrx, a UNO tournament gaming platform, with APIs supporting admin-managed tournaments, user participation, match creation, and reward distribution. Also built the marketing landing page.",
+      "Developed the backend and admin panel for Plyzrx, a UNO tournament gaming platform, with APIs supporting admin managed tournaments, user participation, match creation, and reward distribution. Also built the marketing landing page.",
     tags: ["Next.js", "Node.js", "REST APIs", "Admin Panel"],
     image: "/plyzx.png",
     github: "https://github.com/sharyarnaveed/plyzrx.git",
@@ -115,7 +128,7 @@ const onImageError = (title) => brokenImages.add(title);
       <header class="work__head" data-reveal>
         <p class="scrawl work__scrawl">curated by myself</p>
         <h2 class="display display--lg work__title">Featured works</h2>
-        <p class="stamp work__count">{{ numbered.length }} projects &middot; 2025&ndash;2026</p>
+        <p class="stamp work__count">{{ numbered.length }} projects &middot; 2025 to 2026</p>
       </header>
 
       <!-- featured pair -->
@@ -136,7 +149,7 @@ const onImageError = (title) => brokenImages.add(title);
             <img
               v-if="!brokenImages.has(p.title)"
               :src="p.image"
-              :alt="p.title"
+              :alt="`${p.title} project preview`"
               loading="lazy"
               @error="onImageError(p.title)"
             />
@@ -161,7 +174,7 @@ const onImageError = (title) => brokenImages.add(title);
                 target="_blank"
                 rel="noopener"
               >
-                Live demo &rarr;
+                {{ p.live.includes("npmjs.com") ? "npm package" : "Live demo" }} &rarr;
               </a>
               <a
                 v-if="p.github"
@@ -197,22 +210,33 @@ const onImageError = (title) => brokenImages.add(title);
               <li v-for="t in p.tags.slice(0, 4)" :key="t" class="chip">{{ t }}</li>
             </ul>
 
-            <a
-              v-if="p.live || p.github"
-              class="panel__link stamp"
-              :href="p.live || p.github"
-              target="_blank"
-              rel="noopener"
-            >
-              View project &rarr;
-            </a>
+            <div v-if="p.live || p.github" class="panel__links">
+              <a
+                v-if="p.live"
+                class="panel__link stamp"
+                :href="p.live"
+                target="_blank"
+                rel="noopener"
+              >
+                {{ p.live.includes("npmjs.com") ? "npm package" : "View project" }} &rarr;
+              </a>
+              <a
+                v-if="p.github"
+                class="panel__link stamp"
+                :href="p.github"
+                target="_blank"
+                rel="noopener"
+              >
+                Source &rarr;
+              </a>
+            </div>
           </div>
 
           <div class="panel__media media">
             <img
               v-if="!brokenImages.has(p.title)"
               :src="p.image"
-              :alt="p.title"
+              :alt="`${p.title} project preview`"
               loading="lazy"
               @error="onImageError(p.title)"
             />
@@ -324,6 +348,7 @@ const onImageError = (title) => brokenImages.add(title);
   display: flex;
   flex-direction: column;
   padding: 0.9rem;
+  container-type: inline-size;
 }
 
 .feat:nth-child(odd) {
@@ -358,6 +383,14 @@ const onImageError = (title) => brokenImages.add(title);
   flex: 1;
   gap: 0.7rem;
   padding: 1.1rem 0.35rem 0.35rem;
+  min-width: 0;
+}
+
+.feat__body > .display {
+  font-size: clamp(1.25rem, 10.5cqi, 2rem);
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  line-height: 0.92;
 }
 
 .feat__body .links {
@@ -445,9 +478,15 @@ const onImageError = (title) => brokenImages.add(title);
   max-width: 40ch;
 }
 
+.panel__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem 1.25rem;
+  margin-top: 0.35rem;
+}
+
 .panel__link {
   align-self: flex-start;
-  margin-top: 0.35rem;
   padding-bottom: 2px;
   color: inherit;
   border-bottom: 2px solid currentColor;

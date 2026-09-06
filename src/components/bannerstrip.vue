@@ -27,7 +27,7 @@ const hasBanner = ref(true);
           v-if="hasBanner"
           class="banner__img"
           :src="BANNER_SRC"
-          alt="Sharyar Naveed — custom banner"
+          alt="Custom banner collage by Sharyar Naveed"
           loading="lazy"
           @error="hasBanner = false"
         />
@@ -38,15 +38,15 @@ const hasBanner = ref(true);
           </span>
           <p class="display display--md banner__ph-title">Custom banner</p>
           <p class="hand banner__ph-note">
-            this is where my own collage goes &mdash; drop it in at
+            this is where my own collage goes. Drop it in at
             <code>public/banner.webp</code> and it swaps itself in.
           </p>
         </div>
       </div>
 
       <div class="banner__strip" data-reveal style="--delay: 0.18s">
-        <span class="hl">hand-built</span>
-        <span class="hl hl--pink">over-engineered</span>
+        <span class="hl">hand built</span>
+        <span class="hl hl--pink">over engineered</span>
         <span class="hl hl--blue">shipped anyway</span>
         <span class="hl hl--green">still tweaking</span>
       </div>

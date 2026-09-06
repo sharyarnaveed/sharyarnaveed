@@ -1,5 +1,51 @@
 <script setup>
+import { onMounted } from "vue";
 import { RouterView } from "vue-router";
+
+const MIN_MS = 900;
+const started = performance.now();
+
+const dismissBootLoader = async () => {
+  const loader = document.getElementById("boot-loader");
+  if (!loader) return;
+
+  const fill = document.getElementById("boot-fill");
+  const pct = document.getElementById("boot-pct");
+
+  try {
+    if (document.fonts?.ready) await document.fonts.ready;
+  } catch {
+    /* fonts optional */
+  }
+
+  const elapsed = performance.now() - started;
+  const wait = Math.max(0, MIN_MS - elapsed);
+
+  // Finish the highlighter bar smoothly before exit.
+  if (fill) fill.style.width = "100%";
+  if (pct) {
+    const from = Number.parseInt(pct.textContent || "0", 10) || 0;
+    const t0 = performance.now();
+    const duration = Math.max(280, wait);
+    const tick = (now) => {
+      const t = Math.min(1, (now - t0) / duration);
+      pct.textContent = String(Math.round(from + (100 - from) * t));
+      if (t < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }
+
+  await new Promise((r) => setTimeout(r, Math.max(320, wait)));
+
+  loader.classList.add("boot--out");
+  document.documentElement.classList.remove("booting");
+
+  window.setTimeout(() => loader.remove(), 600);
+};
+
+onMounted(() => {
+  dismissBootLoader();
+});
 </script>
 
 <template>

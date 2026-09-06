@@ -11,7 +11,7 @@ import contactsection from "../components/contactsection.vue";
 <template>
   <navbar />
 
-  <main class="home">
+  <main class="home" id="main">
     <hero />
 
     <div class="snip" aria-hidden="true">

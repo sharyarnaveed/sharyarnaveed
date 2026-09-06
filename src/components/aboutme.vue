@@ -12,8 +12,8 @@ const focuses = [
   { label: "Full Stack", tone: "tag--orange", tilt: "-3deg" },
   { label: "Frontend", tone: "tag--green", tilt: "2deg" },
   { label: "Mobile Apps", tone: "tag--pink", tilt: "-2deg" },
-  { label: "Backend & APIs", tone: "tag--blue", tilt: "3deg" },
-  { label: "AI Agents & LLMs", tone: "tag--lilac", tilt: "-2deg" },
+  { label: "Backend and APIs", tone: "tag--blue", tilt: "3deg" },
+  { label: "AI Agents and LLMs", tone: "tag--lilac", tilt: "-2deg" },
 ];
 
 const stats = [
@@ -38,7 +38,7 @@ const stats = [
             v-if="hasPhoto"
             class="polaroid__img"
             :src="PHOTO_SRC"
-            alt="Sharyar Naveed"
+            alt="Portrait of Sharyar Naveed, web and creative developer"
             loading="lazy"
             @error="hasPhoto = false"
           />
@@ -57,8 +57,8 @@ const stats = [
           <p class="about__copy" data-reveal style="--delay: 0.14s">
             For 2+ years I&rsquo;ve shipped production web and mobile products with
             React.js, Next.js and Node.js, backed by Supabase and Appwrite. Lately most
-            of my time goes into AI agents, tool-calling workflows and fine-tuning
-            language models for domain-specific use cases &mdash; owning projects from
+            of my time goes into AI agents, tool calling workflows and fine tuning
+            language models for domain specific use cases. I own projects from
             architecture through deployment.
           </p>
 

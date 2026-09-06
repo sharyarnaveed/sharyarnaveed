@@ -47,7 +47,8 @@ const { root } = useReveal({ threshold: 0.05 });
 
       <h1 class="hero__name" data-reveal style="--delay: 0.08s">
         <span class="doodle-box display display--xl">Sharyar</span>
-        <sup class="hero__sup stamp">(26)</sup>
+        <span class="visually-hidden">Naveed, Web and Creative Developer</span>
+        <sup class="hero__sup stamp" aria-hidden="true">(26)</sup>
       </h1>
 
       <p class="hero__kicker stamp" data-reveal style="--delay: 0.16s">

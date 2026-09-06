@@ -59,7 +59,7 @@ const groups = [
   {
     label: "AI & LLMs",
     items: [
-      { theexpert: "LLM Fine-Tuning", logoimg: "/icons/finetune.svg", tone: "orange", tilt: "-2deg" },
+      { theexpert: "LLM Fine Tuning", logoimg: "/icons/finetune.svg", tone: "orange", tilt: "-2deg" },
       { theexpert: "AI Agents", logoimg: "/icons/aiagent.svg", tone: "lilac", tilt: "1.5deg" },
       { theexpert: "Tool Calling", logoimg: "/icons/toolcalling.svg", tone: "yellow", tilt: "-1deg" },
       { theexpert: "Prompt Engineering", logoimg: "/icons/prompt.svg", tone: "mint", tilt: "1deg" },

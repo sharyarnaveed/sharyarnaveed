@@ -93,7 +93,7 @@ const tickerItems = [
 
           <div class="sticky contact__note" style="--tilt: 1.5deg">
             <p class="hand contact__note-text">
-              got an idea, a weird bug or a deadline? send it over &mdash; I read
+              got an idea, a weird bug or a deadline? send it over. I read
               everything.
             </p>
             <a class="btn btn--ink btn--sm" :href="`mailto:${EMAIL}`">
@@ -101,7 +101,7 @@ const tickerItems = [
             </a>
           </div>
 
-          <p class="scrawl contact__hint">open for new work &amp; good problems</p>
+          <p class="scrawl contact__hint">open for new work and good problems</p>
         </div>
 
         <figure
