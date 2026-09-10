@@ -43,13 +43,13 @@ const stats = [
             @error="hasPhoto = false"
           />
           <div v-else class="polaroid__img about__mono" aria-hidden="true">SN</div>
-          <figcaption class="polaroid__caption">that&rsquo;s me, KPK &rsquo;26</figcaption>
+          <figcaption class="polaroid__caption">that&rsquo;s me, Islamabad &rsquo;26</figcaption>
         </figure>
 
         <div class="about__body">
           <p class="hand about__lede" data-reveal style="--delay: 0.08s">
             I&rsquo;m a passionate web developer from
-            <span class="hl">KPK, Pakistan</span>, specializing in creating beautiful
+            <span class="hl">Islamabad, Pakistan</span>, specializing in creating beautiful
             and functional digital experiences.
             <span class="spark">&#10035;</span>
           </p>
